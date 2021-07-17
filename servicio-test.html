@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Servicio Test</title>
+		<style>
+			body { margin: 0; }
+		</style>
+	</head>
+	<body>
+
+        <!-- <div class="img">
+            <img src="./img/servicios/img/servicio-1.png">
+        </div>
+        <div class="img">
+            <img src="./img/servicios/img/servicio-1.png">
+        </div>
+        <div class="img">
+            <img src="./img/servicios/img/servicio-1.png">
+        </div>
+        <div class="img">
+            <img src="./img/servicios/img/servicio-1.png">
+        </div>
+        <div class="img">
+            <img src="./img/servicios/img/servicio-1.png">
+        </div>
+        <div class="img">
+            <img src="./img/servicios/img/servicio-1.png">
+        </div>
+        <div class="img">
+            <img src="./img/servicios/img/servicio-1.png">
+        </div>
+        <div class="img">
+            <img src="./img/servicios/img/servicio-1.png">
+        </div>
+        <div class="img">
+            <img src="./img/servicios/img/servicio-1.png">
+        </div> -->
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.js"></script>
+    
+		<script>
+			const scene = new THREE.Scene();
+			const camera = new THREE.PerspectiveCamera( 70, window.innerWidth / window.innerHeight, 0.1, 1000 );
+
+			const renderer = new THREE.WebGLRenderer();
+			renderer.setSize( window.innerWidth, window.innerHeight );
+			document.body.appendChild( renderer.domElement );
+            
+
+			const geometry = new THREE.BoxGeometry();
+			const material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
+			const cylinder = new THREE.Mesh( 
+				new THREE.CylinderGeometry(2,2,4,50,10, true, 0, Math.PI/2), 
+				material
+			);
+
+			cylinder.rotation.y = -0.8;
+			
+			scene.add( cylinder );
+
+			camera.position.z = 6;
+
+			const animate = function () {
+				requestAnimationFrame( animate );
+
+				// cylinder.rotation.y += 0.01;
+				// cube.rotation.y += 0.01;
+
+				renderer.render( scene, camera );
+			};
+
+			animate();
+		</script>
+	</body>
+</html>

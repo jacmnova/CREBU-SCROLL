@@ -117,16 +117,18 @@ canvas {
 
 
 
-#loader {
-  position: fixed;
-  width: 100%;
-  height: 100vh;
-  z-index: 1;
-  overflow: visible;
-  background: #000 url('.././img/loading/crebu-loading-gif.gif') no-repeat center center;
-  transition: all 1s ease-in;
-
+#loader-svg {
+  width: 60vh;
+  margin: auto;
 }
+#loader {
+      transition: 1s ease-out;
+      width: 100%;
+      height: 100vh;
+      z-index: 9999;
+      background-color: #000;
+      display: flex;
+  }
 
 
 .hidden {

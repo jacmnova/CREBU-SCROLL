@@ -495,12 +495,15 @@ svg{
         }
 
         body {
-            background-image: url('./img/servicios/img/servicio-1.png');
+            background-image: url('./img/servicios/backgrounds/BRANDING.png');
             background-repeat: no-repeat, repeat;
             background-position: center; /* Center the image */
             background-size: cover; /* Resize the background image to cover the entire container */
-            width: 100%;
-            height: 100%;
+          
+        }
+
+        #container {
+            height: 100vh;
         }
 
         .box-info {
@@ -554,7 +557,7 @@ body::-webkit-scrollbar-thumb
 
   </style>
   <body id="#scroll-container">
-    <div >
+    <div id="container" >
         <div id="loader"></div>
         <img src="./img/cursor/hand.cur" class="cursor" alt="Cursor" >
         <div class="containercustom" id="viewport">
@@ -576,7 +579,7 @@ body::-webkit-scrollbar-thumb
                     <div class="row">
                         <div class="col-md-12">
                             <p class="text-body">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                Creamos tu marca y el conjunto de elementos que mejor se adapten a su esencia. Nuestro objetivo es construir identidades de marca sólidas y diferenciadoras.
                             </p>
                         </div>
                     </div>
@@ -689,9 +692,11 @@ body::-webkit-scrollbar-thumb
           if (screen.width < 1920){
             gsap.fromTo(".box-left", 
                 {duration: 2, x: "50vw", y: "50vw", ease:"ease-in", opacity: 0},
-                {duration: 2, x: "00vw", y: "-30vw", ease:"ease-in", opacity: 1}
+                {duration: 2, x: "00vw", y: "-20vw", ease:"ease-in", opacity: 1}
             );
           } 
+
+  
 
           if (screen.width >= 1920){
             gsap.fromTo(".box-left", 

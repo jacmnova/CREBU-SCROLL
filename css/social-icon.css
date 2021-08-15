@@ -1,0 +1,18 @@
+.box-social {
+    display: block;
+    position: fixed;
+    left: 94%;
+    top: 15%;
+    z-index: 9999999;
+}
+
+.btn {
+    border-radius: 100%;
+    padding: 12.5px;
+    background-color: #717171 !important;
+    border-color: #717171 !important;
+}
+
+.icon-social {
+    width: 35px;
+}

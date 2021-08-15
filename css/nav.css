@@ -40,3 +40,25 @@
     .nav-text {
         font-family: combat;
     }
+
+    .nav-gift {
+        background: #00000096;
+        display: flex;
+        position: absolute;
+        width: 102%;
+    }
+
+
+    .home-gift {
+        font-family: Neor !important;
+        font-size: 2em !important;
+        text-align: center;
+        width: 100%;
+        padding: 0;
+        line-height: 1;
+        color: #BFFF72;
+    }
+
+    .item-nav-gift:hover {
+        color: #ff3062 !important;
+    }

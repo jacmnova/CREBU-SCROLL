@@ -494,12 +494,13 @@ svg{
             -webkit-text-stroke: 1px #338bff; 
         }
 
-        body {
-            background-image: url('./img/servicios/backgrounds/BRANDING.png');
+        .containercustom {
+            background-image: url('./img/servicios/backgrounds/DISEÑO\ GRAFICO.png');
             background-repeat: no-repeat, repeat;
             background-position: center; /* Center the image */
             background-size: cover; /* Resize the background image to cover the entire container */
-          
+            display: block;
+            width: 100%;
         }
 
         #container {
@@ -692,7 +693,7 @@ body::-webkit-scrollbar-thumb
           if (screen.width < 1920){
             gsap.fromTo(".box-left", 
                 {duration: 2, x: "50vw", y: "50vw", ease:"ease-in", opacity: 0},
-                {duration: 2, x: "00vw", y: "-20vw", ease:"ease-in", opacity: 1}
+                {duration: 2, x: "00vw", y: "-30vw", ease:"ease-in", opacity: 1}
             );
           } 
 

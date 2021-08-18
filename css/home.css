@@ -579,6 +579,20 @@ a {
         cursor: none;
     }
 
+    #navlinkServicio:hover {
+        cursor: none;
+    }
+    #navlinkGift:hover {
+        cursor: none;
+    }
+    #navlinkBlog:hover {
+        cursor: none;
+    }
+
+    svg:hover {
+        cursor: none;
+    }
+
     #background {
         opacity: 0;
     }

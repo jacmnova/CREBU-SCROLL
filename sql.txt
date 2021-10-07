@@ -1,0 +1,67 @@
+SELECT DISTINCT 
+Q1.ID,
+    Q1.post_date,
+    Q1.post_modified,
+    Q1.post_status,
+    Q1.Address,
+    Q1.Address_Zone,
+    Q1.tipo_loja,
+	Q1.post_id_adress,
+	cast(Q2.meta_value as date) post_release
+FROM (SELECT 
+    Q1.ID,
+    Q1.post_date,
+    Q1.post_modified,
+    Q1.post_status,
+    Q1.Address,
+    Q1.Address_Zone,
+    CASE 
+        WHEN pm.meta_value = 173538 THEN '1P - Loja SP'
+        WHEN pm.meta_value = 1446483 THEN '1P - FLV'
+        WHEN pm.meta_value = 225022 THEN '1P - Loja BH'
+        WHEN pm.meta_value = 9074606 THEN '1P - Loja SSA'
+        ELSE '3P'
+    END tipo_loja,
+    Q1.postID as post_id_adress
+FROM(SELECT 
+      Q1.ID,
+      Q1.post_date,
+      Q1.post_modified,
+      Q1.post_status,
+      Q1.Address,
+      pm.meta_value as Address_Zone,
+      Q1.postID
+    FROM(SELECT 
+          Q1.ID as ID,
+          cast(Q1.post_date as date) as post_date,
+          cast(Q1.post_modified as date) as post_modified,
+          Q1.post_status as post_status,
+          Q2.post_name as Address,
+          Q1.meta_value as meta_value,
+          Q1.postID
+        FROM 
+          (SELECT 
+            so.ID, 
+            so.post_date, 
+            so.post_modified, 
+            so.post_name, 
+            so.post_status,
+            pm.meta_value,
+            pm.meta_value as postID
+          FROM 
+            (SELECT 
+              ID, 
+              post_date,
+              post_modified, 
+              post_status, 
+              post_name 
+            FROM wp_posts 
+            WHERE post_type = 'shop_order' and post_status = 'wc-in-route' ) as so,
+          wp_postmeta as pm
+        WHERE so.ID = pm.post_id AND pm.meta_key = '_pickup_place_id') as Q1, 
+              wp_posts as Q2 WHERE Q2.post_type = 'places' and Q2.ID = Q1.meta_value) AS Q1,
+        wp_postmeta as pm
+    WHERE pm.post_id = Q1.meta_value and pm.meta_key = 'address_zone') as Q1,
+    wp_postmeta as pm
+    WHERE  post_id = Q1.ID and meta_key= '_place_id') as Q1, wp_postmeta as Q2
+WHERE Q1.ID = Q2.post_id AND Q2.meta_key = '_status_changed_to_waiting_vend_acpt_at'

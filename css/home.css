@@ -603,6 +603,7 @@ a {
     .piedra {
         width: 100%;
         height: 100%;
+        padding: 100px;
     }
 
     .mt-80 {

@@ -7,3 +7,66 @@
     margin-top: 10px;
     font-size: 30px;
 }
+
+.logoFooter {
+    width: 50px;
+}
+
+.text-footer {
+    color: #FFF;
+    font-family: combat;
+}
+
+.text-footer-info {
+    font-weight: bold;
+    font-size: 25px;
+    text-align: left;
+}
+
+.text-form-footer {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.p-7 {
+    padding-left: 7rem;
+    padding-right: 7rem;
+    padding-bottom: 1rem;
+}
+
+#footer{
+    color: #FFF !important;
+}
+
+@font-face {
+    font-family: Neor;
+    src: url('../fonts/Neor.otf');
+}
+
+@font-face {
+    font-family: combat;
+    src: url('../fonts/Combat.otf');
+}
+
+@font-face {
+    font-family: BelfastGroteskBold;
+    src: url('../fonts/BelfastGroteskSemiBold.ttf');
+}
+
+.input-footer {
+    background: #919191 !important;
+    color: #FFFF;
+}
+
+.input-footer:focus {
+    color: #FFFF;
+}
+
+.icon-redes-img {
+    text-align: center;
+    width: 100%;
+}
+
+.topline {
+    border-top: 2px solid #CCC;
+}

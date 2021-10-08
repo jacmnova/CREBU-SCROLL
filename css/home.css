@@ -64,6 +64,11 @@ body::-webkit-scrollbar-thumb
     src: url('../fonts/BelfastGroteskSemiBold.ttf');
 }
 
+@font-face {
+    font-family: Futurespore;
+    src: url('../fonts/futurespore.ttf');
+}
+
 body {
     background: black;
     margin: 0;
@@ -230,8 +235,25 @@ box-shadow:
 }
 
 .nav-text{
-    font-family: combat;
+    font-family: Futurespore;
     
+}
+
+.nav-item {
+    display: flex;
+}
+
+.nav-item > img {
+    width: 50px;
+}
+
+.nav-item > a {
+    margin-top: 8px;
+}
+
+#navBar {
+    height: 8.5vh;
+    opacity: 0;
 }
 
 .box{
@@ -519,10 +541,7 @@ body::-webkit-scrollbar-thumb
     opacity: 0;
 }
 
-#navBar {
-    height: 5.5vh;
-    opacity: 0;
-}
+
 
 
 #background {

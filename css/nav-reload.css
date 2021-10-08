@@ -1,0 +1,26 @@
+@font-face {
+    font-family: Futurespore;
+    src: url('../fonts/futurespore.ttf');
+}
+
+.nav-text{
+    font-family: Futurespore;
+    
+}
+
+.nav-item {
+    display: flex;
+}
+
+.nav-item > img {
+    width: 50px;
+}
+
+.nav-item > a {
+    margin-top: 8px;
+}
+
+#navBar {
+    height: 8.5vh;
+    opacity: 0;
+}

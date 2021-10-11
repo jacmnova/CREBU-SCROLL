@@ -8,11 +8,11 @@
 
 .btn {
     border-radius: 100%;
-    padding: 12.5px;
-    background-color: #717171 !important;
+    padding: 10.5px;
+    background-color: transparent !important;
     border-color: #717171 !important;
 }
 
 .icon-social {
-    width: 35px;
+    width: 45px;
 }

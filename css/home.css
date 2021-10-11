@@ -99,8 +99,8 @@ body {
 
 
 .box-right {
-    background-color: var(--background);
-    background: var(--green) !important;
+    background-color: var(--white);
+    background: var(--white) !important;
     display: block;
     /* width: 300px;
     min-height: 90px; */
@@ -140,37 +140,37 @@ body {
         121px 121px 0 -3px var(--black), 121px 121px var(--background); */
 
 box-shadow: 
-        30px 20px 0 -3px var(--green), 20px 20px var(--background), 
+        30px 20px 0 -3px var(--white), 20px 20px var(--background), 
         31px 21px 0 -3px var(--black), 21px 21px var(--background),
-        60px 40px 0 -3px var(--green), 40px 40px var(--background), 
+        60px 40px 0 -3px var(--white), 40px 40px var(--background), 
         61px 41px 0 -3px var(--black), 41px 41px var(--background),
-        80px 60px 0 -3px var(--green), 60px 60px var(--background),
+        80px 60px 0 -3px var(--white), 60px 60px var(--background),
         81px 61px 0 -3px var(--black), 61px 61px var(--background),
-        100px 80px 0 -3px var(--green), 80px 80px var(--background),
+        100px 80px 0 -3px var(--white), 80px 80px var(--background),
         101px 81px 0 -3px var(--black), 81px 81px var(--background),
-        120px 100px 0 -3px var(--green), 100px 100px var(--background),
+        120px 100px 0 -3px var(--white), 100px 100px var(--background),
         121px 101px 0 -3px var(--black), 101px 101px var(--background),
-        140px 120px 0 -3px var(--green), 120px 120px var(--background),
+        140px 120px 0 -3px var(--white), 120px 120px var(--background),
         141px 121px 0 -3px var(--black), 121px 121px var(--background),
-        160px 140px 0 -3px var(--green), 120px 120px var(--background),
+        160px 140px 0 -3px var(--white), 120px 120px var(--background),
         161px 141px 0 -3px var(--black), 121px 121px var(--background),
-        180px 160px 0 -3px var(--green), 120px 120px var(--background),
+        180px 160px 0 -3px var(--white), 120px 120px var(--background),
         181px 161px 0 -3px var(--black), 121px 121px var(--background),
-        200px 180px 0 -3px var(--green), 120px 120px var(--background),
+        200px 180px 0 -3px var(--white), 120px 120px var(--background),
         201px 181px 0 -3px var(--black), 121px 121px var(--background),
-        220px 200px 0 -3px var(--green), 120px 120px var(--background),
+        220px 200px 0 -3px var(--white), 120px 120px var(--background),
         221px 201px 0 -3px var(--black), 121px 121px var(--background),
-        240px 220px 0 -3px var(--green), 120px 120px var(--background),
+        240px 220px 0 -3px var(--white), 120px 120px var(--background),
         241px 221px 0 -3px var(--black), 121px 121px var(--background),
-        260px 240px 0 -3px var(--green), 120px 120px var(--background),
+        260px 240px 0 -3px var(--white), 120px 120px var(--background),
         261px 241px 0 -3px var(--black), 121px 121px var(--background),
-        280px 260px 0 -3px var(--green), 120px 120px var(--background),
+        280px 260px 0 -3px var(--white), 120px 120px var(--background),
         281px 261px 0 -3px var(--black), 121px 121px var(--background),
-        300px 280px 0 -3px var(--green), 120px 120px var(--background),
+        300px 280px 0 -3px var(--white), 120px 120px var(--background),
         301px 281px 0 -3px var(--black), 121px 121px var(--background),
-        320px 300px 0 -3px var(--green), 120px 120px var(--background),
+        320px 300px 0 -3px var(--white), 120px 120px var(--background),
         321px 301px 0 -3px var(--black), 121px 121px var(--background),
-        340px 320px 0 -3px var(--green), 120px 120px var(--background),
+        340px 320px 0 -3px var(--white), 120px 120px var(--background),
         341px 321px 0 -3px var(--black), 121px 121px var(--background);
 
     transition: box-shadow 1s, top 1s, left 1s;
@@ -192,6 +192,7 @@ box-shadow:
     font-size: 0.9em;
     text-align: justify;
     padding: 10px;
+    line-height: 1.5;
 }
 .navbar-light .navbar-brand {
     color: rgb(255 255 255 / 90%);
@@ -368,6 +369,10 @@ canvas {
 
 .text-form {
     font-size: 0.8em !important;
+}
+
+.text-form-footer {
+    font-size: 18px !important;
 }
 
 .icon {
